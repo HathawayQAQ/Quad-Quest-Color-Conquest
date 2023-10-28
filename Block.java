@@ -39,7 +39,6 @@ public class Block {
   */
  public Block(int lvl, int maxDepth) {
 
-    // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     this.level = lvl;
     this.maxDepth = maxDepth;
 
@@ -61,7 +60,6 @@ public class Block {
         this.children = new Block[0];
     }
 
-    // My codes ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  }
  /*
   * Updates size and position for the block and all of its sub-blocks, while
@@ -74,7 +72,6 @@ public class Block {
 
  public void updateSizeAndPosition (int size, int xCoord, int yCoord) throws IllegalArgumentException{
 
-    // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     // if it is negative or it cannot be evenly divided into 2 integers until the max depth is reached
     this.size = size;
@@ -104,7 +101,6 @@ public class Block {
 }
 
 
-    // My codes ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   
 
  
