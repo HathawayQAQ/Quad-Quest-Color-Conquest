@@ -8,7 +8,6 @@ public class BlobGoal extends Goal{
 
 	@Override
 	public int score(Block board) {
-		// My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 		if (board == null) {
 			return 0;
@@ -36,8 +35,7 @@ public class BlobGoal extends Goal{
 			}
 		}
 		return blobSize;
-		// My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		//return 0;
+		
 	}
 
 	@Override
@@ -48,7 +46,6 @@ public class BlobGoal extends Goal{
 
 
 	public int undiscoveredBlobSize(int i, int j, Color[][] unitCells, boolean[][] visited) {
-		// My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		
 		// if it is already visited (avoid counting twice)
 		if (visited[i][j]) {
@@ -97,7 +94,6 @@ public class BlobGoal extends Goal{
 		}
 		return size;
 
-		// My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		//return 0;
 
 	}
