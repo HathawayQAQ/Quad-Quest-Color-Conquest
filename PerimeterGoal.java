@@ -9,7 +9,6 @@ public class PerimeterGoal extends Goal{
 	@Override
 	public int score(Block board) {
 
-		// My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		int count = 1;
 
 		if (board == null){
@@ -29,8 +28,7 @@ public class PerimeterGoal extends Goal{
 			}
 		}
 		return count;
-		// My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	
+		
 }
 
 
