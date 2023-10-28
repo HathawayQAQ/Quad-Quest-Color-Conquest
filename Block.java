@@ -117,7 +117,6 @@ public class Block {
   */
  public ArrayList<BlockToDraw> getBlocksToDraw() {
 
-    // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     ArrayList<BlockToDraw> blocksToDraw = new ArrayList<BlockToDraw>();
 
     if (this.children.length == 0){
@@ -143,9 +142,6 @@ public class Block {
         }
     }
     return blocksToDraw;
-    // My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-  // return null;
  }
 
  /*
@@ -175,7 +171,6 @@ public class Block {
   * - if (x,y) is not within this Block, return null.
   */
   public Block getSelectedBlock(int x, int y, int level) {
-    // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     //if the level provided is smaller than this Block’s level or larger than its maximum depth, throw error
     Block retVal = new Block();
@@ -212,7 +207,6 @@ public class Block {
         retVal = this;
     }
     return retVal;
-    // My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 }
 
@@ -229,7 +223,6 @@ public class Block {
   * 
   */
  public void reflect(int direction) {
-  // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   
     if (direction != 0 && direction != 1) {
         throw new IllegalArgumentException("Invalid axis. Must be 0 or 1.");
@@ -275,9 +268,6 @@ public class Block {
     }
 }
 
-
-// My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
-
  
  /*
   * Rotate this Block and all its descendants. 
@@ -285,7 +275,6 @@ public class Block {
   * counterclockwise. If this Block has no children, do nothing.
   */
  public void rotate(int direction) {
-  // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     //takes an int as input representing whether this Block should be rotated 
 
@@ -327,7 +316,6 @@ public class Block {
 
     
 }
-// My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 
  
 
@@ -347,7 +335,7 @@ public class Block {
   * 
   */
  public boolean smash() {
-    // My codes start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
     if ((this.level >= this.maxDepth) || (this.level == 0)){
         return false;
@@ -360,9 +348,6 @@ public class Block {
         this.children[i] = new Block(tempBlock, this.maxDepth);
     }
     return true;
-    // My codes end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    
-    //return false;
  }
 
 /**
